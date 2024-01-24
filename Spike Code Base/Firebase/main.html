@@ -1,0 +1,37 @@
+<!--
+Author: Julian Chong 
+Date: 20 Jan 2019
+A Web App that reads in any message that are sent in from the ground staff. This Web App acts as the client, which is the response team.
+It can also send a message back to the database. Depending on what the response team sends back, it can either turn on or off the
+alarm.
+-->
+
+<!Doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="mainDiv" align="right">
+		<h1 align="left">Sprintvale Response Team</h1>
+        <div id="receiveForm">No current emergencies.</div>
+		<textarea id="sendForm" placeholder="Enter response here ..."></textarea>
+		<button id="submitButton" onclick="submitClick()"></button>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBlTD_V8gmpXR_s7fzXXI0jgfbUK1sfrNI",
+            authDomain: "advanced-programming-11683.firebaseapp.com",
+            databaseURL: "https://advanced-programming-11683.firebaseio.com",
+            projectId: "advanced-programming-11683",
+            storageBucket: "advanced-programming-11683.appspot.com",
+            messagingSenderId: "820440802055"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

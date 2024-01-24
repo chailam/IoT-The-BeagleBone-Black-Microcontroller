@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- The client code base for the Response Team
+        It consists of 4 buttons, which are button to activate the alarm, button to deactivate the alarm, button to activate the safes and buttton to deactivate the event.
+        -->
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+
+
+    <title>Response Team</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Establish connection with server
+      var socket = io.connect();
+      
+      // Change the text for warningStatus according to the button pressed or not
+      socket.on("testingStatus", function(data) {
+        document.getElementById("testingStatus").innerHTML = data;
+      });
+
+    </script>
+  </head>
+
+  <div class="title">
+    <h2>checkSinglePress() number of presses within the last 5 seconds<h2 id="testingStatus">0</h2></h2>
+  </div>
+
+</html>
