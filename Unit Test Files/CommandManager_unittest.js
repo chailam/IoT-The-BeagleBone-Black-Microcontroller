@@ -1,3 +1,8 @@
+/**
+ * This is the file for Unittest to test for CommandManager
+ */
+
+
 var CommandManager = require("./CommandManager");
 var assert = require('assert');
 

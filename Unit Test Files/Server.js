@@ -2,7 +2,7 @@
 Author: Steven Tan Weng Foo
 Date: 26 Jan 2019
 
-Socket.io and BoneScript IoT Library were chosen for the communication between app the the client.
+Socket.io and BoneScript IoT Library were chosen for the communication between app and the client.
 Adapted from BoneScript IOT spike codebase for our use.
 This file is for the establishment of the Server and subsequently the connection using SocketIO between Client and the Server.
 */
