@@ -1,4 +1,5 @@
 # Emergency Response System (Beaglebone Microcontroller IoT Device)
+This project is using the Beaglebone Microcontroller IoT Device to simulate the Emergency Response System for a banking system. It depends on how you press the button to activate/deactivate the alarm and lock/unlock the registers and safes. When activating or deactivating the alarm and locking or unlocking registers and safes, the process is simulated through LED blinking patterns.
 
 ## General Description
 
